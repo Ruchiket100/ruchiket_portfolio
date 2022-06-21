@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Ubuntu+Mono:wght@400;700&display=swap');
+
+
+:root {
+    --background: #EDE9FE;
+    --text-primary: #6B21A8;
+    --pure-color: #000000;
+    --accent: #E9D5FF;
+    --shadow: #a1a1aa ;
+}
+
+[data-theme = 'dark'] {
+    --background: #140322;
+    --text-primary: #E9D5FF;
+    --pure-color: #FFFFFF;
+    --accent: #6B21A8;
+    --shadow: #111827;
+} 
+
+body{
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: var(--background);
+    color: var(--pure-color);
+}
+
