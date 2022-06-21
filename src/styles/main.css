@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Ubuntu+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --background: #EDE9FE;
+    --text-primary: #6B21A8;
+    --pure-color: #000000;
+    --accent: #E9D5FF;
+    --shadow-primary: #a1a1aa ;
+    --shadow-secondary: #d4d4d8 ;
+    --border:#c084fc   ;
+}
+
+[data-theme='dark'] {
+    --background: #140322;
+    --text-primary: #d8b4fe  ;
+    --pure-color: #FFFFFF;
+    --accent: #6B21A8;
+    --shadow-primary: #111827;
+    --shadow-secondary: #1f2937  ;
+    --border:#f0abfc  ;
+} 
+
+
+
+.App{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--background);
+    color: var(--pure-color);
+}
+
+/* -------------------- Header */
+.header-container{
+    display: flex;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    padding-top:1rem ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    
+}
+
+nav li{
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-left: 4rem;
+    color: var(--pure-color);
+    transition: all 0.3s ease-in-out;
+}
+nav li:first-child{
+    margin-left: 0;
+}
+
+nav li:hover{
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+.theme-btn {
+    background: transparent;
+    padding: 0.4rem;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    color: var(--pure-color);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
